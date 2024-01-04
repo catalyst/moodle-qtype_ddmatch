@@ -48,6 +48,21 @@ require_once($CFG->dirroot . '/question/type/ddmatch/tests/helper.php');
  */
 class question_test extends advanced_testcase {
 
+    /**
+     * Polyfill to support the new regexp assertion in place of the old, deprecated one.
+     *
+     * This can be removed once we no longer need to support Moodle <3.11/PHPUnit 8.5.
+     *
+     * @param string $method
+     * @param array $args
+     * @return mixed|void
+     */
+    public function __call(string $method, array $args) {
+        if ($method === 'assertMatchesRegularExpression' && method_exists($this, 'assertRegExp')) {
+            return call_user_func_array([$this, 'assertRegExp'], $args);
+        }
+    }
+
     public function test_get_expected_data() {
         $question = qtype_ddmatch_test_helper::make_a_ddmatching_question();
         $question->start_attempt(new question_attempt_step(), 1);
