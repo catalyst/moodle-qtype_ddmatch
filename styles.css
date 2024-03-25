@@ -231,16 +231,25 @@ body#page-question-type-ddmatch div[id^=fitem_id_][id*=subanswers_] {
 }
 
 .dragdrop-choice {
-    max-height: 100px;
+    max-height: 180px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.dragdrop-question {
+    max-height: 250px;
     overflow: scroll;
 }
 
 .dragdrop-question h3,
 .dragdrop-question p {
-    max-height: 100px;
-    overflow: scroll;
     background-color: #f9f8fb;
     padding: 0.5rem 1rem;
+}
+
+.dragdrop-question img {
+    width: 100%;
 }
 
 .dragdrop-choice::-webkit-scrollbar,
