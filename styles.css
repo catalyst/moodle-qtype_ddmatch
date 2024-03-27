@@ -231,8 +231,15 @@ body#page-question-type-ddmatch div[id^=fitem_id_][id*=subanswers_] {
 }
 
 .dragdrop-choice {
-    max-height: 100px;
-    overflow: auto;
+    max-height: 180px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dragdrop-question {
+    max-height: 250px;
+    overflow-y: auto;
 }
 
 .dragdrop-question h3,
