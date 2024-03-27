@@ -232,7 +232,7 @@ body#page-question-type-ddmatch div[id^=fitem_id_][id*=subanswers_] {
 
 .dragdrop-choice {
     max-height: 100px;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .dragdrop-question h3,
