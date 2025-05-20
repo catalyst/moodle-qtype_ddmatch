@@ -33,3 +33,4 @@ $plugin->dependencies = array(
     'qtype_match' => 2022080900,
 );
 $plugin->release = '2.5.4 (Build: 2025051900)';
+$plugin->supported = [405, 500];
