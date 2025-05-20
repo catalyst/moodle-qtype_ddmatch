@@ -62,7 +62,6 @@ class qtype_ddmatch_test_helper extends question_test_helper {
         $ddmatch->stems = array('', 'Dog', 'Frog', 'Toad', 'Cat');
         $ddmatch->stemformat = array('', FORMAT_HTML, FORMAT_HTML, FORMAT_HTML, FORMAT_HTML);
         $ddmatch->choices = array('', 'Mammal', 'Amphibian', 'Insect');
-        $ddmatch->choiceformat = array('', FORMAT_HTML, FORMAT_HTML, FORMAT_HTML);
         $ddmatch->right = array('', 1, 2, 2, 1);
         unset($ddmatch->stems[0]);
         unset($ddmatch->stemformat[0]);
