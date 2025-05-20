@@ -1,3 +1,9 @@
+# Catalyst Fork
+This is a fork of dualcube's drag and drop match plugin `master` branch.
+It has been updated to support Moodle 4.5 as well as fix some issues, but has not been rigorously tested.
+Test and use at your own risk.
+
+
 Drag-and-Drop Matching Question  [This block is written by DualCube<admin@dualcube.com>.]
 ===============================
 
