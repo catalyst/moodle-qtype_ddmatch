@@ -29,10 +29,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qtype_ddmatch';
 $plugin->version = 2026090300;
-$plugin->requires = 2025041400;
+$plugin->requires = 2024042210;
 $plugin->maturity = MATURITY_STABLE;
-$plugin->dependencies = [
-    'qtype_match' => 2025041400,
-];
+$plugin->dependencies = array(
+    'qtype_match' => 2022080900,
+);
 $plugin->release = '2.6.0 (Build: 2026090300)';
 $plugin->supported = [405, 500];
